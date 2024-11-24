@@ -2,8 +2,8 @@ import express from "express";
 import cors from "cors";
 
 const corsOptions = {
-  origin: process.env.CORS_ORIGIN,
-  // credential: true,
+  origin: process.env.CORS_ORIGIN || "http://localhost:3000",  // Set a default origin for development
+  credentials: true,  // Enable cookies and other credentials
 };
 
 const app = express();
@@ -17,6 +17,6 @@ app.use(express.static("Public"));
 import userRouter from "./routes/user.routes.js";
 
 // Routes declaration
-app.use("/api", userRouter); 
+app.use("/api", userRouter);
 
 export { app };
