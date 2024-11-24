@@ -42,13 +42,13 @@ Start the application:
 Run the backend:
 bash
 Copy code
-cd server  
-npm start  
+cd backend  
+npm  run start  
 Run the frontend:
 bash
 Copy code
-cd client  
-npm start  
+cd frontend  
+npm run dev  
 Usage
 Students can log in, submit leave requests, and upload participation certificates.
 Faculty can view, approve, or reject student requests.
