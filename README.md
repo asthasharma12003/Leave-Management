@@ -25,9 +25,9 @@ Install dependencies for both frontend and backend:
 
 bash
 Copy code
-cd client  
+cd frontend 
 npm install  
-cd ../server  
+cd ../backend 
 npm install  
 Configure environment variables:
 
